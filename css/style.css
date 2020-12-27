@@ -599,7 +599,7 @@ body {
 }
 
 .about .about-content .skill .skill-item .skill-percent {
-    /* display: none; */
+    display: contents;
     line-height: 40px;
     position: absolute;
     right: 0px;
