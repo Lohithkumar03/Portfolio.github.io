@@ -395,7 +395,7 @@ body {
 .text-slide .item-1, 
 .text-slide .item-2, 
 .text-slide .item-3,
-.text-slide .item-4 {
+.text-slide .item-4{
     position: absolute;
     display: block;
     text-align: center;
@@ -411,7 +411,8 @@ body {
 
 .text-slide p.item-1, 
 .text-slide p.item-2, 
-.text-slide p.item-3 {
+.text-slide p.item-3,
+.text-slide .item-4 {
     font-family: 'Rubik', sans-serif;
     font-weight: 700;
 }
@@ -430,6 +431,10 @@ body {
 	animation-name: anim-3;
 }
 
+.text-slide .item-4 {
+    animation-name: anim-4;
+}
+
 @keyframes anim-1 {
 	0%, 8.3% { left: -100%; opacity: 0; }
   8.3%,25% { left: 25%; opacity: 1; }
@@ -445,6 +450,12 @@ body {
 @keyframes anim-3 {
 	0%, 66.66% { left: -100%; opacity: 0; }
   74.96%, 91.62% { left: 25%; opacity: 1; }
+  100% { left: 110%; opacity: 0; }
+}
+
+@keyframes anim-4 {
+	0%, 74.96% { left: -100%; opacity: 0; }
+  85.5%, 91.62% { left: 25%; opacity: 1; }
   100% { left: 110%; opacity: 0; }
 }
 
